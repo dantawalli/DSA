@@ -9,6 +9,8 @@ class GFG {
 	}
 	
 	private static boolean isPalindrome(String word, int left, int right){
+	    if(word.length() == 0) return false;
+	    if(word.length() == 1) return true;
 	    if(left < right){
 	        if(word.charAt(left) != word.charAt(right)){
 	            return false;
